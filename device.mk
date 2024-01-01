@@ -386,9 +386,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_HOST_PACKAGES += \
 	mkdtimg
 
-PRODUCT_PACKAGES += \
-	messaging
-
 # CHRE
 ## Tools
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
