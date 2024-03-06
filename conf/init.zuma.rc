@@ -707,6 +707,13 @@ service abox /vendor/bin/main_abox 17c50000.abox
     group audioserver
     seclabel u:r:abox:s0
 
+service disable_pds /system/bin/sh /system/bin/disable_pds.sh
+    class late_start
+    user shell
+    group shell log readproc
+    seclabel u:r:shell:s0
+    oneshot
+
 # on eng builds, enable kgdb on the serial console
 on property:ro.build.type=eng
     write /sys/module/kgdboc/parameters/kgdboc ttyFIQ1
