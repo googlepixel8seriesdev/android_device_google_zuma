@@ -55,3 +55,6 @@ type sysfs_ospm, sysfs_type, fs_type;
 # GSA
 type sysfs_gsa_log, sysfs_type, fs_type;
 type sysfs_faceauth_rawimage_heap, sysfs_type, fs_type;
+
+# Define the dmabuf type
+type dmabuf, fs_type;
