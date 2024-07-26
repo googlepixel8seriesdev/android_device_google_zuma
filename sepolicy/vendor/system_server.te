@@ -4,3 +4,13 @@ binder_call(system_server, hal_camera_default);
 binder_call(system_server, con_monitor_app);
 
 allow system_server arm_mali_platform_service:service_manager find;
+
+# Allow system_server to load and unload kernel modules
+allow system_server self:capability sys_module;
+
+# Allow system_server to search in proc_irq and proc_touch_gti directories
+allow system_server proc_irq:dir search;
+allow system_server proc_touch_gti:dir search;
+
+# Allow system_server to write to audioserver_tmpfs files
+allow system_server audioserver_tmpfs:file write;

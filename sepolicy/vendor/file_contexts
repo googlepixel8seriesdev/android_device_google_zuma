@@ -99,6 +99,7 @@ is_flag_disabled(RELEASE_AVF_ENABLE_DEVICE_ASSIGNMENT, `
 /dev/block/platform/13200000\.ufs/by-name/vendor_boot_[ab]                  u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/vendor_kernel_boot_[ab]           u:object_r:custom_ab_block_device:s0
 /dev/block/platform/13200000\.ufs/by-name/ufs_internal                      u:object_r:ufs_internal_block_device:s0
+/dev/dmabuf                                                                 u:object_r:dmabuf:s0
 /dev/gxp                                                                    u:object_r:gxp_device:s0
 /dev/mali0                                                                  u:object_r:gpu_device:s0
 /dev/goodix_fp                                                              u:object_r:fingerprint_device:s0
