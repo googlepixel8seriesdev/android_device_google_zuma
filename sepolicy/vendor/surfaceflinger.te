@@ -1,1 +1,4 @@
 allow surfaceflinger arm_mali_platform_service:service_manager find;
+
+# Allow surfaceflinger to getattr on unlabeled filesystem
+allow surfaceflinger unlabeled:filesystem getattr;
