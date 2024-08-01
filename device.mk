@@ -49,6 +49,9 @@ TARGET_BOARD_PLATFORM := zuma
 ALLOW_MISSING_DEPENDENCIES := true
 PRODUCT_USE_SCUDO := true
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 AB_OTA_POSTINSTALL_CONFIG += \
 	RUN_POSTINSTALL_system=true \
 	POSTINSTALL_PATH_system=system/bin/otapreopt_script \
