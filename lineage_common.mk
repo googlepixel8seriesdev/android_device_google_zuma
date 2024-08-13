@@ -16,6 +16,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
 
+# Pixel Camera
+$(call inherit-product-if-exists, vendor/google/camera/pixelcamera.mk)
+
 # Face Unlock
 $(call inherit-product-if-exists, vendor/google/faceunlock/device.mk)
 
