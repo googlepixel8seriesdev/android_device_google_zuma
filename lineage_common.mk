@@ -22,6 +22,9 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # ViPER4AndroidFX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
