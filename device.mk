@@ -48,6 +48,7 @@ include device/google/zuma/dumpstate/item.mk
 TARGET_BOARD_PLATFORM := zuma
 ALLOW_MISSING_DEPENDENCIES := true
 PRODUCT_USE_SCUDO := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 # Blur
 TARGET_ENABLE_BLUR := true
