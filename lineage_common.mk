@@ -11,6 +11,9 @@ DEVICE_PACKAGE_OVERLAYS += device/google/zuma/overlay-lineage
 PRODUCT_COPY_FILES += \
     device/google/zuma/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
 
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
