@@ -37,6 +37,9 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 PRODUCT_PACKAGES += \
     GoogleParts
 
+# Pixel Parts
+$(call inherit-product-if-exists, packages/apps/PixelParts/device.mk)
+
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringOverlay
