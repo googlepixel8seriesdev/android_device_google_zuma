@@ -5,7 +5,7 @@ import init.exynos.sensorhub.rc
 
 on early-init
     write /proc/sys/kernel/sched_pelt_multiplier 1
-    write /sys/kernel/mm/lru_gen/enabled n
+    write /sys/kernel/mm/lru_gen/enabled 7
 
 on init
     # CPU0 cannot be offline
