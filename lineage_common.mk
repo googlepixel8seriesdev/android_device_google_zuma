@@ -55,3 +55,6 @@ TARGET_HAS_UDFPS := true
 
 # ViperFX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Basic Call Recorder (BCR)
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
