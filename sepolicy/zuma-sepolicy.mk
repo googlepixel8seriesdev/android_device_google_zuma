@@ -4,6 +4,9 @@ BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/connectivity_thermal_power
 # google_battery service
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
 
+# wifi_ext service
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_ext
+
 # sepolicy that are shared among devices using zuma
 BOARD_SEPOLICY_DIRS += device/google/zuma/sepolicy/vendor
 BOARD_SEPOLICY_DIRS += device/google/zuma/sepolicy/radio
