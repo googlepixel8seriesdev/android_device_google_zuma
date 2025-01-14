@@ -4,6 +4,9 @@ BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/connectivity_thermal_power
 # google_battery service
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
 
+# turbo_adapter service
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/turbo_adapter
+
 # wifi_ext service
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_ext
 
