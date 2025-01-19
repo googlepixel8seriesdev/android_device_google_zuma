@@ -3,3 +3,7 @@ user=_app seinfo=platform name=com.android.pixeldisplayservice domain=pixeldispl
 
 # PixelNtnService
 user=system seinfo=platform name=com.google.android.satellite domain=pixelntnservice_app type=app_data_file levelFrom=all
+
+# Pixel System Service
+user=_app seinfo=platform name=com.google.android.pixelsystemservice domain=pixelsystemservice_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.google.android.pixelsystemservice:ephemeral domain=pixelsystemservice_app type=app_data_file levelFrom=all
